@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 
@@ -13,7 +14,7 @@ body {
 
     font-family: Arial, Helvetica, sans-serif;
 
-    background: #0b0b12;
+    background: #001d3dff;
 
     color: white;
 
@@ -49,7 +50,7 @@ a {
 
     width: 100%;
 
-    padding: 25px 8%;
+    padding: 10px;
 
     display: flex;
 
@@ -113,6 +114,10 @@ a {
 
     color: white;
 
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+    font-size: 30px;
+
 }
 
 
@@ -130,16 +135,10 @@ a {
 
 .hero {
 
+line-height: 1;
 
+height: 920px;
     
-
-    min-height: 100vh;
-
-    display: flex;
-
-    align-items: center;
-
-    padding: 0 8%;
 
 }
 
@@ -147,19 +146,86 @@ a {
 
 .hero-content {
 
-    max-width: 750px;
+   
+
+}
+
+.heading {
+
+    display: flex;
+
+    
+
+    justify-content: space-between;
+
+}
+
+.heading div {
+
+    margin-top: 220px;
+
+}
+
+.RAJ {
+
+    display: flex;
+
+    gap: 800px !important;
+
+    
 
 }
 
 
 
+.hero h3 {
+
+    position: absolute;
+
+    margin-top: 500px;
+
+    font-size: 50px;
+
+    color: #b5b5b5;
+
+}
+
+
+
+.center {
+
+    margin-left: 800px;
+
+}
+
+.end {
+
+    margin-left: 1
+
+}
+
+.start {
+
+   
+margin-top: 230px;
+   
+
+}
+
 .hero h1 {
 
-    font-size: 70px;
+    font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 
-    line-height: 1.1;
 
-    margin-bottom: 20px;
+    font-size: 500px;
+
+    line-height: 0.4;
+
+   
+    
+    color: #ffd60aff;
 
 }
 
@@ -175,15 +241,35 @@ a {
 
 .hero p {
 
-   
+   font-family: "Bebas Neue", sans-serif;
+  font-weight: 300;
+  font-style: normal;
 
     color: #b5b5b5;
 
-    font-size: 40px;
+    font-size: 80px;
 
-    width: 900px;
+    width: 500px;
 
-    margin-bottom: 35px;
+    
+}
+
+
+.RAJ p {
+
+    font-size: 50px;
+
+}
+
+p.create{
+
+    color: #ffc300ff;
+
+}
+
+P.L1 {
+
+    color: #ffc300ff;
 
 }
 
@@ -207,7 +293,7 @@ a {
 
     border-radius: 30px;
 
-    background: #4f46e5;
+    background: #000814ff;
 
     color: white;
 
@@ -227,11 +313,17 @@ a {
 
 .btn-outline {
 
-    border: 1px solid #6366f1;
+    border: 1px solid #000814ff;
 
     padding: 14px 30px;
 
+    margin-bottom: 200px;
+
     border-radius: 30px;
+
+    background-color: #000814ff;
+
+    line-height: 0.5;
 
 }
 
@@ -239,7 +331,15 @@ a {
 
 .btn-outline:hover {
 
-    background: #6366f1;
+    border: #ffd60aff;
+
+    background: #ffd60aff;
+
+    color: black;
+
+    transform: cubic-bezier(0.165, 0.84, 0.44, 1);
+
+    transition: 0.4s;
 
 }
 
@@ -323,7 +423,13 @@ a {
 
     transform: translateY(-10px);
 
-    border-color: #4f46e5;
+    border-color: #ffc300ff ;
+
+}
+
+.project-content a {
+
+    background-color: #ffc300ff;
 
 }
 
@@ -360,13 +466,14 @@ a {
 
     margin-bottom: 30px;
 
+
 }
 
 
 
 .project-features span {
 
-    background: rgba(99,102,241,0.2);
+    background: #000814ff;
 
     padding: 8px 15px;
 
@@ -428,11 +535,17 @@ a {
 
 .about {
 
-    
+   background-color: #003566ff;
+
+    height: 800px;
 
 }
 
+.about div {
 
+    margin-top: 100px;
+
+}
 
 .about-container {
 
@@ -448,9 +561,11 @@ a {
 
 .about-text p {
 
+    margin-top: 40px;
+
     color:#b5b5b5;
 
-    font-size:25px;
+    font-size:35px;
 
     margin-bottom:20px;
 
@@ -471,6 +586,7 @@ a {
 
     padding:100px 8%;
 
+    background-color: #003566ff;
 }
 
 
@@ -507,7 +623,7 @@ a {
 
     transform:translateY(-8px);
 
-    border-color:#4f46e5;
+    border-color:#ffd60aff;
 
 }
 
@@ -515,7 +631,7 @@ a {
 
 .skill-card h3 {
 
-    font-size:24px;
+    font-size:35px;
 
     margin-bottom:15px;
 
@@ -529,9 +645,23 @@ a {
 
     line-height:2;
 
+    font-size: 30px;
+
 }
 
+.span {
 
+    font-size: px;
+
+}
+
+.project-content a {
+
+    font-size: 20px;
+
+    color: #000814ff;
+
+}
 
 
 
@@ -547,6 +677,231 @@ a {
 
 }
 /* =========================
+   Education / Experience Timeline Section
+   (vertical line, but each entry stretches out
+   across the page width instead of a narrow column)
+========================= */
+
+.education {
+
+    padding:80px 8% 100px;
+
+}
+
+
+.timeline {
+
+    position:relative;
+
+    padding-left:50px;
+
+}
+
+
+.timeline::before {
+
+    content:"";
+
+    position:absolute;
+
+    top:6px;
+
+    bottom:6px;
+
+    left:10px;
+
+    width:3px;
+
+    background:linear-gradient(#ffd60aff, #ffc300ff);
+
+}
+
+
+.timeline-item {
+
+    position:relative;
+
+    padding-bottom:40px;
+
+}
+
+
+.timeline-item:last-child {
+
+    padding-bottom:0;
+
+}
+
+
+.timeline-dot {
+
+    position:absolute;
+
+    top:6px;
+
+    left:-50px;
+
+    width:22px;
+
+    height:22px;
+
+    border-radius:50%;
+
+    background:#ffc300ff;
+
+    border:4px solid #001d3dff;
+
+    box-shadow:0 0 0 2px #ffd60aff;
+
+}
+
+
+.timeline-content {
+
+    background:rgba(255,255,255,0.05);
+
+    border:1px solid rgba(255,255,255,0.1);
+
+    border-radius:20px;
+
+    padding:35px 45px;
+
+    width:100%;
+
+    transition:0.3s;
+
+}
+
+
+.timeline-content:hover {
+
+    transform:translateY(-8px);
+
+    border-color:#ffd60aff;
+
+}
+
+
+.timeline-date {
+
+    display:inline-block;
+
+    color:#ffc300ff;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+    margin-bottom:12px;
+
+}
+
+
+.timeline-content h3 {
+
+    font-size:32px;
+
+    margin-bottom:8px;
+
+}
+
+
+.timeline-content h4 {
+
+    font-size:20px;
+
+    color:#b5b5b5;
+
+    font-weight:400;
+
+    margin-bottom:15px;
+
+}
+
+
+.timeline-content p {
+
+    color:#b5b5b5;
+
+    font-size:30px;
+
+    line-height:1.7;
+
+    max-width:1100px;
+
+}
+
+
+@media(max-width:900px){
+
+
+    .education {
+
+        padding:60px 6%;
+
+    }
+
+
+    .timeline {
+
+        padding-left:38px;
+
+    }
+
+
+    .timeline::before {
+
+        left:8px;
+
+    }
+
+
+    .timeline-dot {
+
+        left:-38px;
+
+    }
+
+
+    .timeline-content {
+
+        padding:20px 22px;
+
+    }
+
+
+    .timeline-content h3 {
+
+        font-size:22px;
+
+    }
+
+
+    .timeline-content h4 {
+
+        font-size:16px;
+
+    }
+
+
+    .timeline-content p {
+
+        font-size:16px;
+
+    }
+
+
+    .timeline-date {
+
+        font-size:14px;
+
+    }
+
+
+}
+/* =========================
    Contact Section
 ========================= */
 
@@ -554,6 +909,8 @@ a {
 .contact {
 
     padding:100px 8%;
+
+    background-color: #003566ff;
 
 }
 
@@ -589,7 +946,7 @@ a {
 
 .contact-card h3 {
 
-    font-size:32px;
+    font-size:42px;
 
     margin-bottom:20px;
 
@@ -601,7 +958,7 @@ a {
 
     color:#b5b5b5;
 
-    font-size:18px;
+    font-size:25px;
 
     margin-bottom:35px;
 
@@ -623,13 +980,17 @@ a {
 
 .contact-links a {
 
+    color: #000814ff;
+
     padding:12px 25px;
 
     border-radius:30px;
 
-    background:#4f46e5;
+    background:#ffc300ff;
 
     transition:0.3s;
+
+    font-size: 20px;
 
 }
 
@@ -637,9 +998,11 @@ a {
 
 .contact-links a:hover {
 
-    background:#6366f1;
+    background:#001d3dff;
 
     transform:translateY(-3px);
+
+    color: #ffd60aff;
 
 }
 
@@ -705,4 +1068,313 @@ footer {
     }
 
 
+}
+
+/* =========================================================
+   RESPONSIVE OVERHAUL (mobile / tablet)
+   Desktop rules above are untouched. Everything below only
+   kicks in at narrower widths, layered so later rules win.
+========================================================= */
+
+/* ---------- Tablet / small laptop ---------- */
+@media (max-width: 1100px) {
+
+    .about-container {
+        width: 90%;
+        max-width: 1500px;
+    }
+
+    .RAJ {
+        gap: 200px !important;
+    }
+
+    .center {
+        margin-left: 300px;
+    }
+
+    .hero h1 {
+        font-size: 220px;
+    }
+
+    .hero p {
+        font-size: 50px;
+        width: 380px;
+    }
+
+    .RAJ p {
+        font-size: 32px;
+    }
+
+    .hero {
+        height: 760px;
+    }
+
+    .heading div,
+    .about div {
+        margin-top: 140px;
+    }
+
+    .start {
+        margin-top: 140px;
+    }
+
+    .hero h3 {
+        margin-top: 320px;
+        font-size: 36px;
+    }
+}
+
+/* ---------- Mobile ---------- */
+@media (max-width: 900px) {
+
+    .navbar {
+        flex-wrap: wrap;
+        padding: 14px 16px;
+    }
+
+    .logo {
+        font-size: 30px;
+    }
+
+    .nav-links {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        gap: 12px;
+        margin-top: 10px;
+    }
+
+    .nav-links a {
+        font-size: 15px;
+    }
+
+    .nav-links a:hover {
+        font-size: 16px;
+    }
+
+    /* ---- Hero: switch from the absolute/huge-margin desktop
+       layout to a simple stacked column ---- */
+    .hero {
+        height: auto;
+        padding: 130px 20px 60px;
+    }
+
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero h3 {
+        position: static;
+        margin: 0 0 6px;
+        font-size: 20px;
+    }
+
+    .heading {
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 4px;
+    }
+
+    .heading div {
+        margin-top: 10px;
+    }
+
+    .start {
+        margin-top: 0;
+    }
+
+    .hero h1 {
+        font-size: clamp(56px, 22vw, 110px);
+        line-height: 0.95;
+    }
+
+    .center {
+        margin-left: 0;
+        align-self: center;
+    }
+
+    .hero p {
+        font-size: clamp(16px, 5vw, 22px);
+        width: 100%;
+    }
+
+    .RAJ {
+        flex-direction: column;
+        gap: 4px !important;
+        margin-top: 10px;
+    }
+
+    .RAJ p {
+        font-size: clamp(14px, 4.5vw, 20px);
+    }
+
+    .end {
+        margin-left: 0;
+        align-self: flex-start;
+    }
+
+    .hero-buttons {
+        font-size: 18px;
+        margin-top: 20px;
+    }
+
+    .btn-outline {
+        margin-bottom: 0;
+    }
+
+    /* ---- About ---- */
+    .about {
+        height: auto;
+        padding: 80px 6% 60px;
+    }
+
+    .about div {
+        margin-top: 0;
+    }
+
+    .about-container {
+        width: 100%;
+    }
+
+    .section-title h2 {
+        font-size: 34px;
+    }
+
+    .section-title p {
+        font-size: 18px;
+    }
+
+    .about-text p {
+        font-size: 18px;
+        margin-top: 20px;
+        line-height: 1.7;
+    }
+
+    /* ---- Projects ---- */
+    .projects {
+        padding: 60px 6%;
+    }
+
+    .project-container {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card {
+        padding: 22px;
+    }
+
+    .project-card h3 {
+        font-size: 24px;
+    }
+
+    .project-card p {
+        font-size: 16px;
+    }
+
+    .project-features span {
+        font-size: 12px;
+    }
+
+    .project-content a {
+        font-size: 14px;
+    }
+
+    /* ---- Skills ---- */
+    .skills {
+        padding: 60px 6%;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+
+    .skill-card {
+        padding: 20px;
+    }
+
+    .skill-card h3 {
+        font-size: 20px;
+    }
+
+    .skill-card p {
+        font-size: 16px;
+    }
+
+    /* ---- Contact ---- */
+    .contact {
+        padding: 60px 6%;
+    }
+
+    .contact-card {
+        padding: 28px 20px;
+        max-width: 100%;
+    }
+
+    .contact-card h3 {
+        font-size: 24px;
+    }
+
+    .contact-card p {
+        font-size: 16px;
+    }
+
+    .contact-links {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .contact-links a {
+        font-size: 15px;
+        padding: 10px 18px;
+    }
+}
+
+/* ---------- Small phones ---------- */
+@media (max-width: 480px) {
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+    .hero {
+        padding: 110px 16px 50px;
+    }
+
+    .hero h1 {
+        font-size: clamp(44px, 20vw, 70px);
+    }
+
+    .hero h3 {
+        font-size: 17px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    .RAJ p {
+        font-size: 13px;
+    }
+
+    .about-container {
+        width: 100%;
+    }
+
+    .section-title h2 {
+        font-size: 26px;
+    }
+
+    .section-title p {
+        font-size: 15px;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
 }
