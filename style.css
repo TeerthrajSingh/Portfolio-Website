@@ -157,43 +157,17 @@ align-items: center;
 
 }
 
-.heading {
+.hero-div {
 
     display: flex;
 
-    flex-wrap: wrap;
+    flex-direction: column;
 
-    align-items: flex-end;
-
-    gap: 20px 40px;
+    align-items: flex-start;
 
 }
 
-.heading div {
-
-    margin-top: 0;
-
-}
-
-.RAJ {
-
-    display: flex;
-
-    flex-wrap: wrap;
-
-    align-items: flex-end;
-
-    gap: 20px 40px !important;
-
-    margin-top: 20px;
-
-}
-
-
-
-.hero h3 {
-
-    position: static;
+.hero-greeting {
 
     width: 100%;
 
@@ -205,54 +179,24 @@ align-items: center;
 
 }
 
-
-
-.center {
-
-    margin-left: 0;
-
-}
-
-.end {
-
-    margin-left: 0;
-
-}
-
-.start {
-
-    margin-top: 0;
-
-}
-
-.hero h1 {
+.hero-name {
 
     font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   font-style: normal;
 
 
-    font-size: clamp(60px, 12vw, 180px);
+    font-size: clamp(64px, 13vw, 200px);
 
-    line-height: 0.9;
+    line-height: 0.95;
 
-   
-    
     color: #ffd60aff;
 
-}
-
-
-
-.hero h1 span {
-
-    color: #6366f1;
+    margin-bottom: 30px;
 
 }
 
-
-
-.hero p {
+.hero-tagline {
 
    font-family: "Bebas Neue", sans-serif;
   font-weight: 300;
@@ -260,29 +204,29 @@ align-items: center;
 
     color: #b5b5b5;
 
-    font-size: clamp(18px, 2.5vw, 32px);
+    font-size: clamp(20px, 2.5vw, 34px);
 
-    width: auto;
+    max-width: 560px;
 
-    max-width: 500px;
-
-    
-}
-
-
-.RAJ p {
-
-    font-size: clamp(16px, 1.6vw, 22px);
+    margin-bottom: 24px;
 
 }
 
-p.create{
+.hero-mission {
 
-    color: #ffc300ff;
+   font-family: "Bebas Neue", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+
+    color: #b5b5b5;
+
+    font-size: clamp(16px, 1.8vw, 24px);
+
+    max-width: 600px;
 
 }
 
-P.L1 {
+.hero-mission .create {
 
     color: #ffc300ff;
 
@@ -524,13 +468,6 @@ P.L1 {
     .nav-links {
 
         display:none;
-
-    }
-
-
-    .hero h1 {
-
-        font-size:45px;
 
     }
 
@@ -1132,66 +1069,29 @@ footer {
         font-size: 16px;
     }
 
-    /* ---- Hero: switch from the absolute/huge-margin desktop
-       layout to a simple stacked column ---- */
+    /* ---- Hero: simple stacked column on small screens ---- */
     .hero {
         height: auto;
         padding: 130px 20px 60px;
     }
 
-    .hero-content {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .hero h3 {
-        position: static;
-        margin: 0 0 6px;
+    .hero-greeting {
         font-size: 20px;
     }
 
-    .heading {
-        flex-direction: column;
-        justify-content: flex-start;
-        gap: 4px;
-    }
-
-    .heading div {
-        margin-top: 10px;
-    }
-
-    .start {
-        margin-top: 0;
-    }
-
-    .hero h1 {
+    .hero-name {
         font-size: clamp(56px, 22vw, 110px);
         line-height: 0.95;
     }
 
-    .center {
-        margin-left: 0;
-        align-self: center;
-    }
-
-    .hero p {
+    .hero-tagline {
         font-size: clamp(16px, 5vw, 22px);
-        width: 100%;
+        max-width: 100%;
     }
 
-    .RAJ {
-        flex-direction: column;
-        gap: 4px !important;
-        margin-top: 10px;
-    }
-
-    .RAJ p {
+    .hero-mission {
         font-size: clamp(14px, 4.5vw, 20px);
-    }
-
-    .end {
-        margin-left: 0;
-        align-self: flex-start;
+        max-width: 100%;
     }
 
     .hero-buttons {
@@ -1326,19 +1226,19 @@ footer {
         padding: 110px 16px 50px;
     }
 
-    .hero h1 {
+    .hero-name {
         font-size: clamp(44px, 20vw, 70px);
     }
 
-    .hero h3 {
+    .hero-greeting {
         font-size: 17px;
     }
 
-    .hero p {
+    .hero-tagline {
         font-size: 15px;
     }
 
-    .RAJ p {
+    .hero-mission {
         font-size: 13px;
     }
 
