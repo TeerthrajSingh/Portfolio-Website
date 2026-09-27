@@ -137,8 +137,15 @@ a {
 
 line-height: 1;
 
-height: 920px;
-    
+min-height: 100vh;
+
+height: auto;
+
+padding: 160px 6% 80px;
+
+display: flex;
+
+align-items: center;
 
 }
 
@@ -146,7 +153,7 @@ height: 920px;
 
 .hero-content {
 
-   
+    width: 100%;
 
 }
 
@@ -154,15 +161,17 @@ height: 920px;
 
     display: flex;
 
-    
+    flex-wrap: wrap;
 
-    justify-content: space-between;
+    align-items: flex-end;
+
+    gap: 20px 40px;
 
 }
 
 .heading div {
 
-    margin-top: 220px;
+    margin-top: 0;
 
 }
 
@@ -170,9 +179,13 @@ height: 920px;
 
     display: flex;
 
-    gap: 800px !important;
+    flex-wrap: wrap;
 
-    
+    align-items: flex-end;
+
+    gap: 20px 40px !important;
+
+    margin-top: 20px;
 
 }
 
@@ -180,11 +193,13 @@ height: 920px;
 
 .hero h3 {
 
-    position: absolute;
+    position: static;
 
-    margin-top: 500px;
+    width: 100%;
 
-    font-size: 50px;
+    margin-bottom: 10px;
+
+    font-size: clamp(20px, 2vw, 32px);
 
     color: #b5b5b5;
 
@@ -194,21 +209,19 @@ height: 920px;
 
 .center {
 
-    margin-left: 800px;
+    margin-left: 0;
 
 }
 
 .end {
 
-    margin-left: 1
+    margin-left: 0;
 
 }
 
 .start {
 
-   
-margin-top: 230px;
-   
+    margin-top: 0;
 
 }
 
@@ -219,9 +232,9 @@ margin-top: 230px;
   font-style: normal;
 
 
-    font-size: 500px;
+    font-size: clamp(60px, 12vw, 180px);
 
-    line-height: 0.4;
+    line-height: 0.9;
 
    
     
@@ -247,9 +260,11 @@ margin-top: 230px;
 
     color: #b5b5b5;
 
-    font-size: 80px;
+    font-size: clamp(18px, 2.5vw, 32px);
 
-    width: 500px;
+    width: auto;
+
+    max-width: 500px;
 
     
 }
@@ -257,7 +272,7 @@ margin-top: 230px;
 
 .RAJ p {
 
-    font-size: 50px;
+    font-size: clamp(16px, 1.6vw, 22px);
 
 }
 
@@ -1084,43 +1099,8 @@ footer {
         max-width: 1500px;
     }
 
-    .RAJ {
-        gap: 200px !important;
-    }
-
-    .center {
-        margin-left: 300px;
-    }
-
-    .hero h1 {
-        font-size: 220px;
-    }
-
-    .hero p {
-        font-size: 50px;
-        width: 380px;
-    }
-
-    .RAJ p {
-        font-size: 32px;
-    }
-
-    .hero {
-        height: 760px;
-    }
-
-    .heading div,
     .about div {
         margin-top: 140px;
-    }
-
-    .start {
-        margin-top: 140px;
-    }
-
-    .hero h3 {
-        margin-top: 320px;
-        font-size: 36px;
     }
 }
 
